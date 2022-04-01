@@ -1,1 +1,25 @@
 What is data structure ?
+Different ways of organising data on your computer that can be used effectively.
+
+What is Algorithm?
+Set of instructions/rules for a computer program to perform a task.
+Input data --> calculation --> stop when answer found
+-Correctness -Efficiency 
+
+Types of Ds ?
+1.primitive : built in programming lang itself - Integer, float ,character, boolean
+2.non-primitive : user defined- combining two or more primitive  DS : 
+    a. linear : items are arranged in memory in linear seq manner 
+                i. Static : sizes are fixed -array
+                ii. Dynamic : changes -linked list, stack,queue
+    b. non linear : data not org. seq. - tree,graph
+ Each data structure is unique and have different features.
+ 
+ Types of Algo ?
+ 1. Simple recursive Algo
+ 2. Divide and conquer Algo
+ 3. Dynamic prog Algo
+ 4. Greedy algo
+ 5. Brute force Algo
+ 6. Randomized algo
+ 
