@@ -1,0 +1,59 @@
+What is recursion?
+Way of solving a problem by having a function calling itself.
+-performing the sameoperations multiple time with different inputs
+-In every step we try smaller imputs to make the problem smaller
+-base condition is needed to stop the recursion otherwise , infinite loop will occur.
+
+Recursion vs Iteration ?
+                  Recursion       Iteration
+space efficient -   No               Yes      - no stack memory required in case of iteration
+Time efficient -    No               Yes      - in case of recursion more time to pop and push elements in stack memory 
+easy to code -      Yes              No       - recursion is used when we know that the problem can be divided into sub problem
+recursion uses more memory. If we use embeded memory ex phone it willnot be efficient
+
+Write recusion in 3 steps : factorial example
+1. Recursive case - the flow - ex:n*n-1*n-2....*2*1
+2. Base case - the stopping criteria - ex: 0!=1,1!=1
+3. Unintentional case - the constraints - ex: factorial(-1), factorial(-2)
+--------------------------------------------------------------------------------------------------
+public class Factorial {
+  public static void main(String[] args) {
+	  Factorial rec  = new Factorial();  
+	  System.out.println(rec.factorial(5));
+  } 
+  public int factorial(int num) { 
+	  if(num<0)
+	  {
+		  return -1;
+	  }
+	  else {
+		  if(num==0 || num ==1) {
+			  return 1;
+		  }
+		  else {
+			  return num * factorial(num-1);
+		  }
+	  }
+  }
+  --------------------------------------------------------------------------------------------------
+  public class Fibonacci {
+ public static void main(String[] args) {
+	 
+	 Fibonacci fib = new Fibonacci();
+	 System.out.println(fib.fibonacci(5));
+	 
+ }
+ public int fibonacci(int num)
+ {
+	 if (num<0) {
+		 return -1;
+	 }
+	 else {
+		 if ( num ==0 || num ==1) {
+			 return num;
+		 }
+		 else  return fibonacci(num-1)+fibonacci(num-2);
+	 }
+	 
+ }
+-----------------------------------------------------------------------------------------------------
